@@ -15,6 +15,13 @@
   const year = document.querySelector('#year');
   if (year) year.textContent = new Date().getFullYear();
 
+  const formStatus = document.querySelector('.form-status');
+  if (formStatus && new URLSearchParams(window.location.search).get('sent') === '1') {
+    formStatus.textContent = 'Thanks — your message has been sent. I’ll be in touch soon.';
+    formStatus.hidden = false;
+    history.replaceState(null, '', `${window.location.pathname}#contact`);
+  }
+
   const reveal = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((entries, obs) => {

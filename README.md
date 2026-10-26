@@ -12,6 +12,10 @@ python -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
+## Contact form
+
+The form uses [FormSubmit](https://formsubmit.co/) to deliver messages to the portfolio email address. On the first submission, FormSubmit sends a verification email to activate the form. Confirm it before relying on the form to receive messages.
+
 ## Publish with GitHub Pages
 
 1. Push this project to a GitHub repository.
@@ -22,7 +26,7 @@ Then visit `http://localhost:8000`.
 ## Project files
 
 - `index.html` — portfolio content and page structure
-- `styles.css` — responsive visual design, diagrams, and motion
-- `script.js` — mobile navigation, current year, and scroll reveals
+- `styles.css` and `contact.css` — responsive design, diagrams, and form styling
+- `script.js` — mobile navigation, current year, scroll reveals, and form confirmation
 
 There is no build step or package installation. The display typefaces are loaded from Google Fonts; system fallbacks are included.

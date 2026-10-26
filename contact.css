@@ -1,0 +1,20 @@
+.contact-panel{grid-template-columns:.92fr 1.08fr;gap:45px;padding:50px 58px}
+.contact-intro,.contact-form{position:relative;z-index:1}
+.contact-intro>p{max-width:345px;color:#d0d7ca;font-size:11px;line-height:1.9;margin:19px 0 10px}
+.contact-email{font-size:11px}
+.contact-socials{margin-top:15px}
+.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}
+.contact-form>label{margin-top:5px;color:#e5e9de;font:8px var(--mono)}
+.contact-form>label[for="contact-name"],.contact-form>label[for="contact-message"]{grid-column:1/-1}
+.contact-form input:not([type=hidden]),.contact-form textarea{width:100%;min-width:0;padding:10px 11px;border:1px solid #ffffff35;border-radius:2px;background:#ffffff0b;color:#fff;font:11px var(--sans);outline:none}
+.contact-form input:not([type=hidden])::placeholder,.contact-form textarea::placeholder{color:#bdc6b6}
+.contact-form input:not([type=hidden]):focus,.contact-form textarea:focus{border-color:var(--lime);box-shadow:0 0 0 2px #d3e66c25}
+.contact-form textarea{grid-column:1/-1;resize:vertical;min-height:88px}
+.form-honey{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+.button-lime{grid-column:1/-1;justify-self:start;margin-top:4px;border:0;background:var(--lime);color:var(--ink);cursor:pointer}
+.button-lime span{font-size:15px;color:var(--green)}
+.form-note,.form-status{grid-column:1/-1;margin:0;color:#c5cfbb;font-size:8px}
+.form-status{color:var(--lime);font-size:10px}
+.contact-panel .contact-scribble{z-index:0}
+@media(max-width:900px){.contact-panel{padding-inline:35px;gap:25px}.contact-panel h2{font-size:48px}}
+@media(max-width:650px){.contact-panel{grid-template-columns:1fr;gap:20px;padding:34px 25px}.contact-intro{padding-top:0}.contact-form{gap:8px}.contact-panel .contact-scribble{font-size:58px}}
