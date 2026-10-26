@@ -1,0 +1,54 @@
+:root{--paper:#111713;--ink:#eceee4;--muted:#a6ab9f;--line:#303a31;--green:#a6c77c;--lime:#d7e985;--orange:#f28a68}
+body{background:var(--paper);color:var(--ink)}
+body:before{opacity:.1}
+.header{border-color:var(--line)}
+.brand-mark{color:#111713}
+nav{color:#b4baad}
+nav a:hover,nav a.active{color:#fff}
+.nav-cta{border-color:#475348;color:var(--ink)}
+.menu{border-color:var(--line)}
+.menu span{background:var(--ink)}
+.eyebrow,.hero-meta,.side-note,.section-index,.art-top,.art-bottom,.art-label,.art-index,.project-number,.job-date,.job-heading>span,.edu-date,.footer>p,.back-top{color:#a3aa9b}
+.lede,.about-copy,.work-heading>p,.project-copy>p,.job-body>p,.job-body ul,.education p,.education small{color:#bac0b3}
+.meta-rule{background:#505c4e}
+.hero-art{background:#19221b;background-image:radial-gradient(ellipse at 50% 49%,#27382a 0 21%,transparent 21.5%),linear-gradient(145deg,#1d281f,#141b16);border-color:#334036}
+.orbit-line{border-color:#a4bd7955}
+.orbit-b{border-color:#a4bd7935}
+.art-core{background:#a6c77c;color:#111713;box-shadow:0 12px 32px #0006}
+.core-caption,.core-code{color:#283724}
+.sticker{background:#202a22;color:var(--ink);border-color:#465244;box-shadow:0 7px 20px #0004}
+.section-index span:first-child,.project-number span,.side-note span,.button-text span,.inline-link span,.tags span{color:var(--orange)}
+.work-section,.experience-section{background:#171e19}
+.project{background:#1d251f;border-color:#343e35}
+.project-art{border-color:#343e35}
+.hire-art{background-color:#1b251d;background-image:linear-gradient(#a9c87b12 1px,transparent 1px),linear-gradient(90deg,#a9c87b12 1px,transparent 1px)}
+.flow-card{background:#222d24;border-color:#53634f;box-shadow:0 5px 15px #0004}
+.flow-card span,.art-index{color:#b0b9a8}
+.flow-card b{color:var(--ink)}
+.card-b{background:#293528}
+.vision-art{background:#19251e;background-image:linear-gradient(#a2c6ac10 1px,transparent 1px),linear-gradient(90deg,#a2c6ac10 1px,transparent 1px)}
+.vision-frame{border-color:#66796c;background:linear-gradient(150deg,#28392fb5,#1a2820a1)}
+.ops-art{background:#28291f;background-image:radial-gradient(ellipse at 50% 100%,#47442f,transparent 74%)}
+.project-copy ul{color:#c3c9bc}
+.tags span,.job-body .tags span{border-color:#3c473d;color:#c0c7b7}
+.private-note{color:#a3aa9b!important}
+.button-outline{border-color:#53604f;color:var(--ink)}
+.button-text{color:var(--ink)}
+.button-dark{background:#a6c77c;color:#111713}
+.button-dark span{color:#243321}
+.interest-list,.interest-list>div{border-color:var(--line)}
+.interest-list b{color:var(--ink)}
+.interest-list small{color:#a6ab9f}
+.timeline,.job{border-color:#354035}
+.job-heading p,.education small{color:#c0d894}
+.education{border-color:var(--line)}
+.education h3{color:var(--ink)}
+.contact-panel{background:#26392b;color:#f0f1e8}
+.contact-panel .section-index{color:#d0d9c6}
+.contact-intro>p,.contact-form>label{color:#e0e5d9}
+.contact-socials a,.form-note,.form-status{color:#d5ddcf}
+.contact-email,.contact-panel h2 em,.form-status{color:var(--lime)}
+.contact-form input:not([type=hidden]),.contact-form textarea{background:#152219;border-color:#657662;color:#f2f2e8}
+.contact-form input:not([type=hidden])::placeholder,.contact-form textarea::placeholder{color:#b7c2ae}
+.footer{border-color:var(--line)}
+@media(max-width:650px){nav{background:#171f19;border-color:#354035}}

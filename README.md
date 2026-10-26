@@ -26,7 +26,7 @@ The form uses [FormSubmit](https://formsubmit.co/) to deliver messages to the po
 ## Project files
 
 - `index.html` — portfolio content and page structure
-- `styles.css` and `contact.css` — responsive design, diagrams, and form styling
+- `styles.css`, `contact.css`, and `dark.css` — responsive design, diagrams, dark theme, and form styling
 - `script.js` — mobile navigation, current year, scroll reveals, and form confirmation
 
 There is no build step or package installation. The display typefaces are loaded from Google Fonts; system fallbacks are included.
