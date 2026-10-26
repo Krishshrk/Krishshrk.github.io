@@ -3,7 +3,7 @@
 .contact-intro>p{max-width:345px;color:#d0d7ca;font-size:11px;line-height:1.9;margin:19px 0 10px}
 .contact-email{font-size:11px}
 .contact-socials{margin-top:15px}
-.contact-form{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px}
+.contact-form{display:grid;grid-template-columns:1fr;gap:8px 12px}
 .contact-form>label{margin-top:5px;color:#e5e9de;font:8px var(--mono)}
 .contact-form>label[for="contact-name"],.contact-form>label[for="contact-message"]{grid-column:1/-1}
 .contact-form input:not([type=hidden]),.contact-form textarea{width:100%;min-width:0;padding:10px 11px;border:1px solid #ffffff35;border-radius:2px;background:#ffffff0b;color:#fff;font:11px var(--sans);outline:none}

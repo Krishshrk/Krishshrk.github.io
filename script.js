@@ -19,41 +19,19 @@
   const contactForm = document.querySelector('.contact-form');
   if (contactForm && formStatus) {
     const submitButton = contactForm.querySelector('[type="submit"]');
-    const originalButton = submitButton.innerHTML;
-
-    contactForm.addEventListener('submit', async event => {
-      event.preventDefault();
+    contactForm.addEventListener('submit', () => {
       submitButton.disabled = true;
       submitButton.textContent = 'Sending…';
       formStatus.hidden = true;
-
-      try {
-        const data = new URLSearchParams();
-        new FormData(contactForm).forEach((value, key) => {
-          if (typeof value === 'string') data.append(key, value);
-        });
-        const endpoint = contactForm.action.replace('formsubmit.co/', 'formsubmit.co/ajax/');
-        const response = await fetch(endpoint, {
-          method: 'POST',
-          headers: {Accept: 'application/json', 'Content-Type': 'application/x-www-form-urlencoded'},
-          body: data.toString()
-        });
-        const result = await response.json();
-        if (!response.ok || result.success === false || result.success === 'false') {
-          throw new Error(result.message || 'Your message could not be sent. Please try again.');
-        }
-
-        contactForm.reset();
-        formStatus.textContent = 'Thanks — your message has been sent. I’ll be in touch soon.';
-        submitButton.innerHTML = 'Send another message <span>↗</span>';
-      } catch (error) {
-        formStatus.textContent = error.message || 'Something went wrong. Please try again or email me directly.';
-        submitButton.innerHTML = originalButton;
-      } finally {
-        formStatus.hidden = false;
-        submitButton.disabled = false;
-      }
     });
+
+    if (new URLSearchParams(window.location.search).get('sent') === '1') {
+      formStatus.textContent = 'Thanks — your message has been sent. I’ll be in touch soon.';
+      formStatus.hidden = false;
+      history.replaceState(null, '', `${window.location.pathname}#contact`);
+      submitButton.innerHTML = 'Send another message <span>↗</span>';
+      submitButton.disabled = false;
+    }
   }
 
   const reveal = document.querySelectorAll('.reveal');
